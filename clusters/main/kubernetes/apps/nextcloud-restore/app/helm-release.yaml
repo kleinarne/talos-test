@@ -92,7 +92,7 @@ spec:
               enabled: true
               certificateIssuer: domain-0-le-prod
           hosts:
-            - host: cs.nextcloud-restore-test.${DOMAIN_0_LOCAL}
+            - host: cs.nextcloud.${DOMAIN_0_LOCAL_TEST}
     credentials:
       backblaze:
         type: s3
