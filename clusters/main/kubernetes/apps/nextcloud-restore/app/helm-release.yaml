@@ -74,7 +74,7 @@ spec:
       main:
         enabled: true
         hosts:
-          - host: 'nextcloud.${DOMAIN_0_LOCAL_TEST}'
+          - host: nextcloud.${DOMAIN_0_LOCAL_TEST}
             paths:
               - path: /
                 pathType: Prefix
@@ -101,10 +101,3 @@ spec:
         accessKey: ${S3_BACKBLAZE_ACCESSKEY}
         secretKey: ${S3_BACKBLAZE_SECRETKEY}
         encrKey: ${S3_BACKBLAZE_ENCRKEY}
-      minio:
-        type: s3
-        url: ${MINIO_S3_URL}
-        bucket: ${MINIO_S3_BUCKET}-nextcloud
-        accessKey: ${MINIO_S3_ACCESSKEY}
-        secretKey: ${MINIO_S3_SECRETKEY}
-        encrKey: ${MINIO_S3_ENCRKEY}
