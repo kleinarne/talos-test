@@ -74,7 +74,7 @@ spec:
       main:
         enabled: true
         hosts:
-          - host: nextcloud.${DOMAIN_0_LOCAL_TEST}
+          - host: 'nextcloud.${DOMAIN_0_LOCAL_TEST}'
             paths:
               - path: /
                 pathType: Prefix
